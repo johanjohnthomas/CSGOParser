@@ -18,7 +18,7 @@ input_pages_count = int(input('How many pages do you wish to parse? --> '))
 input_starting_page = int(input('Which page do you want to start from? --> '))
 
 """
-Function to get data (ATTENTION! Call this function if you are working first time with this code)
+Function to get data
 
 Arguments: 
     1. page - First page to start the iteration from
