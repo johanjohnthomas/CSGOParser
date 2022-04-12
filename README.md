@@ -1,4 +1,4 @@
-# :video_game: CSGOParser - Data Parser for CSGOTM (market.csgo)
+# :video_game: CSGOParser - Data Parser for CSGOTM for Linux (market.csgo)
 
 # :blue_book: How to use it?
 1. Run the main file in the command line using "python main.py"
