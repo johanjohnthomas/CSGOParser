@@ -22,7 +22,7 @@ Function to get data
 
 Arguments: 
     1. page - First page to start the iteration from
-    2. pages_count - How many pages to iterate through (Write '1' to get only the page you choosed)
+    2. pages_count - How many pages to iterate through (Write '1' to only get the page you choosed)
 """
 def get_data(page=0, pages_count=1):
     i = 0
@@ -102,13 +102,13 @@ for product_name, product_link in all_products.items():
         continue
     else:
         try:    
-            product_cost = soup.find('div', class_='ip-bestprice').text.strip()
+            product_cost = soup.find('div', class_='ip-bestprice').text.strip() + " RUB"
 
-            product_min_cost = soup.find_all('div', class_='rectanglestat')[1].find('b').text.strip()
+            product_min_cost = soup.find_all('div', class_='rectanglestat')[1].find('b').text.strip() + " RUB"
                 
-            product_max_cost = soup.find_all('div', class_='rectanglestat')[2].find('b').text.strip()
+            product_max_cost = soup.find_all('div', class_='rectanglestat')[2].find('b').text.strip() + " RUB"
 
-            product_avg_cost = soup.find_all('div', class_='rectanglestat')[3].find('b').text.strip()
+            product_avg_cost = soup.find_all('div', class_='rectanglestat')[3].find('b').text.strip() + " RUB"
         except Exception as e:
             product_cost = 'Unavailable'
         
