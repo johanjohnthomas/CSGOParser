@@ -5,6 +5,10 @@ import lxml
 from bs4 import BeautifulSoup
 
 # Constants
+LANGEN = 'en' #Default When no lang specified
+LANGRU = 'ru' #Need to specify in link to use ru, i.e (https://market.csgo.com/ru/?h=&p=1&q=&r=)
+
+
 URL = 'https://market.csgo.com/?r=&q=&p=1&h='
 HEADERS = {
 
